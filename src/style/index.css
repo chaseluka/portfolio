@@ -7,9 +7,28 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #eee;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+html {
+  height: 100%;
 }
 
 code {
   font-family: "Open Sans", "Inter", source-code-pro, Menlo, Monaco, Consolas,
     "Courier New", monospace;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
 }

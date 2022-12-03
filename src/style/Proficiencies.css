@@ -1,0 +1,24 @@
+.item {
+  width: 100%;
+}
+
+.item .item-logo {
+  width: 80%;
+  height: 80%;
+}
+
+#proficiencies .content {
+  margin: 2vh 0;
+  --n: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .item {
+    font-size: 2vw;
+  }
+}

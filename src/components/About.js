@@ -22,17 +22,19 @@ const About = () => {
           <div className="message-container">
             <div className="message">
               No work in life is more stimulating and fulfilling than solving
-              problems. From a math nerd, to a biologist, and everything in
-              between, I have always had a passion for solving complex problems.
-              It's this affinity that drove me to programming. I love to tackle
-              challenges on both the front-end and back-end, and I'm committed
-              to finidng the best possible of solutions.
+              problems. From math, to philosophy, and everything in between, I
+              have always had a passion for solving complex problems. It's this
+              affinity that drove me to programming.
+            </div>
+            <div className="message">
+              I love to tackle challenges on both the front-end and back-end,
+              and I'm committed to finidng the best possible of solutions.
             </div>
           </div>
           <div className="related-links">
-            <Github />
+            <Github className="github" />
             <LinkedIn />
-            <Indeed />
+            <Indeed className="indeed" />
             <Twitter />
           </div>
         </div>

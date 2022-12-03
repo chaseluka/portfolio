@@ -32,3 +32,56 @@ svg {
   height: 24px;
   width: 24px;
 }
+
+#about,
+#proficiencies,
+#projects,
+#contact {
+  margin: 2vh 5vw;
+}
+
+#about,
+.image,
+.content,
+.name-container,
+.message-container,
+.about-me,
+.related-links,
+.item,
+.project,
+.projects-container {
+  display: flex;
+}
+
+#about,
+.content,
+.message-container,
+.about-me,
+.item,
+.project,
+.projects-container {
+  flex-direction: column;
+}
+
+.image,
+.content,
+.name-container,
+.message-container,
+.about-me,
+.related-links,
+.item,
+.project,
+.projects-container {
+  justify-content: center;
+}
+
+.content,
+.name-container,
+.message-container,
+.about-me,
+.related-links,
+.item,
+.project,
+.projects-container {
+  align-items: center;
+}

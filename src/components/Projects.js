@@ -6,7 +6,7 @@ import PortfolioSection from "./PortfolioSection";
 
 const Projects = () => {
   return (
-    <div id="Projects">
+    <div id="projects">
       <div className="section-header">
         <PortfolioSection title="Projects" />
       </div>

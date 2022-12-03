@@ -1,0 +1,51 @@
+.image {
+  width: 95%;
+}
+
+#about img {
+  flex-grow: 1;
+}
+
+#about .name {
+  font-size: 7.5vw;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.message-container {
+  font-size: 3.25vw;
+}
+
+.about-me,
+.message-container {
+  gap: 1vh;
+}
+
+.github,
+.indeed {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.related-links {
+  gap: 3vw;
+  cursor: pointer;
+}
+
+#about svg:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  #about svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  #about svg {
+    height: 16px;
+    width: 16px;
+  }
+}

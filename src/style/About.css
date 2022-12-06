@@ -21,19 +21,8 @@
   gap: 1vh;
 }
 
-.github,
-.indeed {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
-    brightness(102%) contrast(102%);
-}
-
-.related-links {
-  gap: 3vw;
-  cursor: pointer;
-}
-
-#about svg:active {
-  transform: scale(1.1);
+#about .description-bar {
+  display: none;
 }
 
 @media (max-width: 600px) {

@@ -1,26 +1,101 @@
 #projects img {
-  position: relative;
-  width: 90%;
+  width: 100%;
   height: auto;
+  border: 0.2px solid #fff;
 }
 
 .project {
-  background-color: #222;
-  border-radius: 10px;
+  padding: 0vh 2vw 2vh 2vw;
+  gap: 2vh;
+}
+
+#projects .image {
+  width: 85%;
+  height: 85%;
+  position: relative;
+}
+
+#projects .description-bar {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  height: calc(100% - 2px);
+  width: min-content;
+  background-color: rgba(31, 31, 31, 0.342);
+  padding: 0px 1.5vw;
+}
+
+#projects .description-bar svg {
+  cursor: pointer;
+}
+
+#projects .description-bar svg {
+  transition: transform 1s;
+}
+
+#projects .rotate {
+  transform: rotate(180deg);
+}
+
+#projects .message {
+  font-size: 2vw;
+  visibility: hidden;
+  opacity: 0;
+  width: 0px;
+  margin-left: 0px;
+  transition: visibility 0.5s, width 1.5s ease-out, opacity 0.9s ease-in;
+}
+
+#projects .show {
+  opacity: 1;
+  visibility: visible;
+  width: 35vw;
+  margin-left: 10px;
 }
 
 .projects-container {
-  gap: 3rem;
+  gap: 4vh;
 }
 
-.project:nth-child(odd) .image img {
+.projects-container .project:first-child::before {
+  border-top: none;
+}
+
+.project::before {
+  content: "";
+  padding-top: calc(4vh - 0.5vw);
+  position: relative;
+  left: 0;
   top: 0;
-  left: -20px;
-  box-shadow: 20px 8px 5px 2px rgb(113, 63, 187);
+  height: 1px;
+  width: 50%;
+  border-top: 5px solid rgb(255, 255, 255);
 }
 
-.project:nth-child(even) .image img {
-  top: 5px;
-  left: 20px;
-  box-shadow: -20px 8px 5px 2px rgb(21, 1, 51);
+.bottom-buttons {
+  margin-top: 2vh;
+  gap: 2vw;
+}
+
+.bottom-buttons button {
+  display: inline-block;
+  appearance: none;
+  background: transparent; /* default color */
+  background: linear-gradient(to left, transparent 50%, #fff 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+  border: 1px solid #fff;
+  padding: 2vw;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.bottom-buttons button:hover {
+  background-position: left;
+  color: #000;
+}
+
+.bottom-buttons button:active {
+  transform: scale(0.95);
 }

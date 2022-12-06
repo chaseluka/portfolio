@@ -3,7 +3,7 @@ import "../style/PortfolioSection.css";
 
 const PortfolioSection = ({ title }) => {
   return (
-    <div id="section">
+    <div className="section">
       <div className="title-container">
         <div className="title">{title}</div>
       </div>

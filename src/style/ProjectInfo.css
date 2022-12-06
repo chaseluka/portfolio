@@ -1,0 +1,33 @@
+.project-info {
+  gap: 2vh;
+}
+
+.name {
+  font-size: 5vw;
+  font-family: "Open Sans", "Inter", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+  font-weight: 600;
+}
+
+#projects svg {
+  height: clamp(24px, 6vw, 45px);
+  width: auto;
+}
+
+#projects .link-container {
+  padding: 0.75rem;
+  width: clamp(24px, 6vw, 45px);
+  height: clamp(24px, 6vw, 45px);
+  border-radius: 100%;
+  background-color: rgba(40, 40, 40, 0.565);
+}
+
+#projects .link-container:hover {
+  background-color: rgb(72, 72, 72);
+}
+
+@media (max-width: 600px) {
+  #projects .link-container {
+    padding: 0.5rem;
+  }
+}

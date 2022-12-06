@@ -49,7 +49,10 @@ svg {
 .related-links,
 .item,
 .project,
-.projects-container {
+.projects-container,
+.project-info,
+.bottom-buttons,
+.description-bar {
   display: flex;
 }
 
@@ -59,7 +62,8 @@ svg {
 .about-me,
 .item,
 .project,
-.projects-container {
+.projects-container,
+.project-info {
   flex-direction: column;
 }
 
@@ -71,7 +75,10 @@ svg {
 .related-links,
 .item,
 .project,
-.projects-container {
+.projects-container,
+.project-info,
+.bottom-buttons,
+.description-bar {
   justify-content: center;
 }
 
@@ -82,6 +89,35 @@ svg {
 .related-links,
 .item,
 .project,
-.projects-container {
+.projects-container,
+.project-info,
+.bottom-buttons,
+.description-bar {
   align-items: center;
+}
+
+.content {
+  margin: 2vh 0;
+}
+
+.make-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.related-links {
+  gap: 3vw;
+}
+
+.related-links div:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.related-links div:focus {
+  transform: scale(0.9);
+}
+
+.related-links div:active {
+  transform: scale(1.1);
 }

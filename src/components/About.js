@@ -32,10 +32,18 @@ const About = () => {
             </div>
           </div>
           <div className="related-links">
-            <Github className="github" />
-            <LinkedIn />
-            <Indeed className="indeed" />
-            <Twitter />
+            <div className="link-container">
+              <Github className="make-white" />
+            </div>
+            <div className="link-container">
+              <LinkedIn />
+            </div>
+            <div className="link-container">
+              <Indeed className="make-white" />
+            </div>
+            <div className="link-container">
+              <Twitter />
+            </div>
           </div>
         </div>
       </div>

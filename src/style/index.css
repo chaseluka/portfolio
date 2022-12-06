@@ -34,13 +34,6 @@ svg {
 }
 
 #about,
-#proficiencies,
-#projects,
-#contact {
-  margin: 2vh 5vw;
-}
-
-#about,
 .image,
 .content,
 .name-container,
@@ -103,7 +96,7 @@ svg {
 }
 
 .content {
-  margin: 2vh 0;
+  margin: calc(2vh + 2vw) 0;
 }
 
 .make-white {
@@ -126,4 +119,22 @@ svg {
 
 .related-links div:active {
   transform: scale(1.1);
+}
+
+@media (min-width: 0px) {
+  #about,
+  #proficiencies,
+  #projects,
+  #contact {
+    margin: 2vh 5vw;
+  }
+}
+
+@media (min-width: 600px) {
+  #about,
+  #proficiencies,
+  #projects,
+  #contact {
+    margin: 2vh 7vw;
+  }
 }

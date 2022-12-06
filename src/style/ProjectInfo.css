@@ -10,14 +10,14 @@
 }
 
 #projects svg {
-  height: clamp(24px, 6vw, 45px);
+  height: clamp(24px, 6vw, 40px);
   width: auto;
 }
 
 #projects .link-container {
   padding: 0.75rem;
-  width: clamp(24px, 6vw, 45px);
-  height: clamp(24px, 6vw, 45px);
+  width: clamp(24px, 6vw, 40px);
+  height: clamp(24px, 6vw, 40px);
   border-radius: 100%;
   background-color: rgba(40, 40, 40, 0.565);
 }

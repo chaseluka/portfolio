@@ -85,9 +85,9 @@
   background-size: 200%;
   transition: 0.5s ease-out;
   border: 1px solid #fff;
-  padding: 2vw;
+  padding: clamp(1px, 2vw, 12px);
   color: #fff;
-  font-size: 3vw;
+  font-size: clamp(1px, 2.5vw, 1.3rem);
   font-weight: 500;
 }
 
@@ -110,5 +110,15 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  #projects .image {
+    width: 80%;
+    height: 80%;
+  }
+  #projects .name {
+    font-size: clamp(1.5rem, 5vw, 2.1rem);
   }
 }

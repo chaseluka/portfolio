@@ -12,10 +12,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.message-container {
-  font-size: 3.25vw;
-}
-
 .about-me,
 .message-container {
   gap: 1vh;
@@ -25,16 +21,32 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 350px) {
   #about svg {
     height: 20px;
     width: 20px;
   }
+  .message-container {
+    font-size: 3.25vw;
+  }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 0px) {
   #about svg {
     height: 16px;
     width: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  #about svg {
+    height: 23px;
+    width: 23px;
+  }
+  .message-container {
+    font-size: 1.25rem;
+  }
+  #about .name {
+    font-size: 3.5rem;
   }
 }

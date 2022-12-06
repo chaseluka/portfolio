@@ -9,7 +9,6 @@
 .title {
   font-family: "Inter", "Open Sans", source-code-pro, Menlo, Monaco, Consolas,
     "Courier New", monospace;
-  font-size: 7vw;
   color: rgba(255, 255, 255, 0.698);
   font-weight: 600;
 }
@@ -18,4 +17,16 @@
   height: 1.5px;
   width: 100%;
   background-color: rgba(102, 102, 102, 0.416);
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: clamp(40px, 5vw, 45px);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 7vw;
+  }
 }

@@ -52,7 +52,9 @@ svg {
 .projects-container,
 .project-info,
 .bottom-buttons,
-.description-bar {
+.description-bar,
+.contact-info,
+.contact-info-container {
   display: flex;
 }
 
@@ -63,7 +65,8 @@ svg {
 .item,
 .project,
 .projects-container,
-.project-info {
+.project-info,
+.contact-info-container {
   flex-direction: column;
 }
 
@@ -78,7 +81,9 @@ svg {
 .projects-container,
 .project-info,
 .bottom-buttons,
-.description-bar {
+.description-bar,
+.contact-info,
+.contact-info-container {
   justify-content: center;
 }
 
@@ -92,7 +97,8 @@ svg {
 .projects-container,
 .project-info,
 .bottom-buttons,
-.description-bar {
+.description-bar,
+.contact-info {
   align-items: center;
 }
 

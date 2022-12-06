@@ -1,0 +1,30 @@
+.contact-info-container {
+  align-items: flex-start;
+  gap: calc(1vh + 1vw);
+}
+
+.contact-icon svg {
+  height: clamp(18px, 4vw, 36px);
+  width: auto;
+}
+
+.contact-icon {
+  height: clamp(18px, 4vw, 36px);
+}
+
+#contact .content {
+  gap: calc(1vh + 1vw);
+}
+
+#contact .related-links svg {
+  height: clamp(22px, 5vw, 40px);
+  width: auto;
+}
+
+.contact-type {
+  font-size: clamp(12px, 3.5vw, 18px);
+}
+
+.contact-info {
+  gap: 5px;
+}

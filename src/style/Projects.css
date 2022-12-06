@@ -99,3 +99,16 @@
 .bottom-buttons button:active {
   transform: scale(0.95);
 }
+
+.transition {
+  animation: fade-in 3s 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

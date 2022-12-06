@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../style/Projects.css";
 import Image from "./Image";
 import ProjectInfo from "./ProjectInfo";
@@ -6,6 +6,7 @@ import PortfolioSection from "./PortfolioSection";
 import uniqid from "uniqid";
 
 const Projects = () => {
+  const initialMount = useRef(false);
   const [projectList, setProjectList] = useState([
     {
       projectName: "TwitterClone",
@@ -61,14 +62,24 @@ const Projects = () => {
       <div className="content">
         <div className="projects-container">
           {(() => {
-            console.log(projectList);
-            return projectList.map((project) => {
-              return (
-                <div className="project" key={project.id}>
-                  <Image />
-                  <ProjectInfo projectName={project.projectName} />
-                </div>
-              );
+            return projectList.map((project, index) => {
+              index++;
+              console.log(index);
+              if (index > 3 && !initialMount.current) {
+                if (index === 6) initialMount.current = true;
+                return (
+                  <div className="project transition" key={project.id}>
+                    <Image />
+                    <ProjectInfo projectName={project.projectName} />
+                  </div>
+                );
+              } else
+                return (
+                  <div className="project" key={project.id}>
+                    <Image />
+                    <ProjectInfo projectName={project.projectName} />
+                  </div>
+                );
             });
           })()}
         </div>

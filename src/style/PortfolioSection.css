@@ -19,7 +19,7 @@
   background-color: rgba(102, 102, 102, 0.416);
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 600px) {
   .title {
     font-size: clamp(40px, 5vw, 45px);
   }

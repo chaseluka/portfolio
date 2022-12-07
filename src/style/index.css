@@ -138,3 +138,9 @@ svg {
     margin: 2vh 7vw;
   }
 }
+
+@media (min-width: 600px) {
+  .content {
+    margin: calc(2vh + 2vw) 5vw;
+  }
+}

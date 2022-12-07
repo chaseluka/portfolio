@@ -2,7 +2,6 @@ import React from "react";
 import "../style/About.css";
 import { ReactComponent as Github } from "../style/images/github-original.svg";
 import { ReactComponent as LinkedIn } from "../style/images/linkedin-original.svg";
-import { ReactComponent as Indeed } from "../style/images/indeed-svgrepo-com.svg";
 import { ReactComponent as Twitter } from "../style/images/twitter-original.svg";
 import PortfolioSection from "./PortfolioSection";
 import Image from "./Image";
@@ -32,18 +31,18 @@ const About = () => {
             </div>
           </div>
           <div className="related-links">
-            <div className="link-container">
+            <a href="https://github.com/chaseluka" className="link-container">
               <Github className="make-white" />
-            </div>
-            <div className="link-container">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/chase-luka-999a9a259/"
+              className="link-container"
+            >
               <LinkedIn />
-            </div>
-            <div className="link-container">
-              <Indeed className="make-white" />
-            </div>
-            <div className="link-container">
+            </a>
+            <a href="https://twitter.com/Chaseluka0" className="link-container">
               <Twitter />
-            </div>
+            </a>
           </div>
         </div>
       </div>

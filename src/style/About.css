@@ -1,5 +1,6 @@
 .image {
   width: 95%;
+  max-width: 650px;
 }
 
 #about img {
@@ -19,6 +20,10 @@
 
 #about .description-bar {
   display: none;
+}
+
+.message {
+  text-align: center;
 }
 
 @media (min-width: 350px) {
@@ -42,6 +47,19 @@
   #about svg {
     height: 23px;
     width: 23px;
+  }
+  .message-container {
+    font-size: 1.25rem;
+  }
+  #about .name {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #about svg {
+    height: 26px;
+    width: 26px;
   }
   .message-container {
     font-size: 1.25rem;

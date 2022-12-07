@@ -20,7 +20,8 @@
   top: 1px;
   right: 0px;
   height: calc(100% - 2px);
-  width: min-content;
+  min-width: min-content;
+  max-width: 280px;
   background-color: rgba(31, 31, 31, 0.342);
   padding: 0px 1.5vw;
 }
@@ -38,7 +39,7 @@
 }
 
 #projects .message {
-  font-size: 2vw;
+  font-size: clamp(1px, 2vw, 1rem);
   visibility: hidden;
   opacity: 0;
   width: 0px;
@@ -118,7 +119,20 @@
     width: 80%;
     height: 80%;
   }
+
   #projects .name {
     font-size: clamp(1.5rem, 5vw, 2.1rem);
+  }
+  #projects .show {
+    width: 28vw;
+  }
+  #projects .description-bar {
+    padding: 0px 0.8vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  #projects .show {
+    width: 250px;
   }
 }

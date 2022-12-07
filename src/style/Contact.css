@@ -1,6 +1,7 @@
 .contact-info-container {
   align-items: flex-start;
   gap: calc(1vh + 1vw);
+  align-self: flex-start;
 }
 
 .contact-icon svg {

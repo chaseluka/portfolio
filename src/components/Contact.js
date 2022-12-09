@@ -42,7 +42,7 @@ const Contact = () => {
             <Github className="make-white" />
           </a>
           <a
-            href="https://www.linkedin.com/in/chase-luka-999a9a259/"
+            href="https://www.linkedin.com/in/chase-lukasiewicz-999a9a259/"
             className="link-container"
           >
             <LinkedIn />

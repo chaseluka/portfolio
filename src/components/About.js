@@ -13,7 +13,7 @@ const About = () => {
         <PortfolioSection title="About" />
       </div>
       <div className="content">
-        <Image />
+        <Image gif={"self-portrait-fake.jpg"} />
         <div className="about-me">
           <div className="name-container">
             <div className="name">Chase Lukasiewicz</div>
@@ -35,7 +35,7 @@ const About = () => {
               <Github className="make-white" />
             </a>
             <a
-              href="https://www.linkedin.com/in/chase-luka-999a9a259/"
+              href="https://www.linkedin.com/in/chase-lukasiewicz-999a9a259/"
               className="link-container"
             >
               <LinkedIn />

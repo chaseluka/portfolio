@@ -9,22 +9,32 @@ const Projects = () => {
   const initialMount = useRef(false);
   const [projectList, setProjectList] = useState([
     {
-      projectName: "TwitterClone",
+      projectName: "Twitter Clone",
       message:
         "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
       id: uniqid(),
+      gif: "twitterclone.gif",
+      repository: "https://github.com/chaseluka/twitter-clone",
+      live: "https://twitterclone-641f5.web.app/",
     },
     {
-      projectName: "TwitterClone",
+      projectName: "Where's Waldo",
       message:
-        "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
+        "A photo tagging app recreating the beloved puzzle books, while utilizing firebase as the backend storage",
       id: uniqid(),
+      gif: "whereswaldo.gif",
+      repository: "https://github.com/chaseluka/photo-tagging",
+      live: "https://photo-tagging-11145.web.app/",
     },
+
     {
-      projectName: "TwitterClone",
+      projectName: "Task Manager",
       message:
-        "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
+        "Manage todo's by adding and editing tasks, add tasks to specific projects, and view all completed tasks.",
       id: uniqid(),
+      gif: "todo-list.gif",
+      repository: "https://github.com/chaseluka/todo-list",
+      live: "https://chaseluka.github.io/todo-list/",
     },
   ]);
 
@@ -34,22 +44,31 @@ const Projects = () => {
     setProjectList(
       projectList.concat([
         {
-          projectName: "TwitterClone",
+          projectName: "Battleship",
           message:
-            "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
+            "The classic game: 'Battleship'. This project was the first utilization of Test Driven Development",
           id: uniqid(),
+          gif: "battleship.gif",
+          repository: "https://github.com/chaseluka/battleship",
+          live: "https://chaseluka.github.io/battleship/",
         },
         {
-          projectName: "TwitterClone",
+          projectName: "Weather App",
           message:
-            "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
+            "A weather forecast site using a weather API. Dynamically relates a large amount of weather information at any given location through asynchronous programming.",
           id: uniqid(),
+          gif: "weather-app.gif",
+          repository: "https://github.com/chaseluka/weather-app",
+          live: "https://chaseluka.github.io/weather-app/",
         },
         {
-          projectName: "TwitterClone",
+          projectName: "Tic-Tac-Toe",
           message:
-            "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
+            "Another classic game using algorithims, like the minimax algorithm, to develop a AI capable of making the best possible move",
           id: uniqid(),
+          gif: "tic-tac-toe.gif",
+          repository: "https://github.com/chaseluka/tic-tac-toe",
+          live: "https://chaseluka.github.io/tic-tac-toe/",
         },
       ])
     );
@@ -69,15 +88,23 @@ const Projects = () => {
                 if (index === 6) initialMount.current = true;
                 return (
                   <div className="project transition" key={project.id}>
-                    <Image />
-                    <ProjectInfo projectName={project.projectName} />
+                    <Image gif={project.gif} message={project.message} />
+                    <ProjectInfo
+                      projectName={project.projectName}
+                      repo={project.repository}
+                      live={project.live}
+                    />
                   </div>
                 );
               } else
                 return (
                   <div className="project" key={project.id}>
-                    <Image />
-                    <ProjectInfo projectName={project.projectName} />
+                    <Image gif={project.gif} message={project.message} />
+                    <ProjectInfo
+                      projectName={project.projectName}
+                      repo={project.repository}
+                      live={project.live}
+                    />
                   </div>
                 );
             });
@@ -90,7 +117,9 @@ const Projects = () => {
           >
             Show more
           </button>
-          <button className="button-container">Full repository</button>
+          <a href="https://github.com/chaseluka?tab=repositories">
+            <button className="button-container">Full repository</button>
+          </a>
         </div>
       </div>
     </div>

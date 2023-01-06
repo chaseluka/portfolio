@@ -83,7 +83,6 @@ const Projects = () => {
           {(() => {
             return projectList.map((project, index) => {
               index++;
-              console.log(index);
               if (index > 3 && !initialMount.current) {
                 if (index === 6) initialMount.current = true;
                 return (

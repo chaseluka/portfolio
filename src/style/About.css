@@ -1,5 +1,5 @@
 .image {
-  width: 95%;
+  width: 50%;
   max-width: 650px;
 }
 
@@ -38,15 +38,15 @@
 
 @media (min-width: 0px) {
   #about svg {
-    height: 16px;
-    width: 16px;
+    height: 21x;
+    width: 21px;
   }
 }
 
 @media (min-width: 600px) {
   #about svg {
-    height: 23px;
-    width: 23px;
+    height: 28px;
+    width: 28px;
   }
   .message-container {
     font-size: 1.25rem;
@@ -58,8 +58,8 @@
 
 @media (min-width: 1000px) {
   #about svg {
-    height: 26px;
-    width: 26px;
+    height: 32px;
+    width: 32px;
   }
   .message-container {
     font-size: 1.25rem;

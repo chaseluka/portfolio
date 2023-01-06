@@ -2,13 +2,16 @@ import React from "react";
 import "../style/Contact.css";
 import { ReactComponent as Phone } from "../style/images/cellphone.svg";
 import { ReactComponent as Email } from "../style/images/email.svg";
-import { ReactComponent as Address } from "../style/images/map-marker.svg";
 import { ReactComponent as Github } from "../style/images/github-original.svg";
 import { ReactComponent as LinkedIn } from "../style/images/linkedin-original.svg";
-import { ReactComponent as Twitter } from "../style/images/twitter-original.svg";
 import PortfolioSection from "./PortfolioSection";
 
-const Contact = () => {
+const Contact = ({ setCopied }) => {
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("chaseluka@gmail.com");
+    setCopied(true);
+  };
+
   return (
     <div id="contact">
       <div className="section-header">
@@ -22,19 +25,14 @@ const Contact = () => {
             </div>
             <div className="contact-type">970-405-5931</div>
           </div>
-          <div className="contact-info">
+          <div
+            className="contact-info email-container"
+            onClick={copyToClipboard}
+          >
             <div className="contact-icon">
               <Email className="make-white" />
             </div>
-            <div className="contact-type">chaseluka@gmail.com</div>
-          </div>
-          <div className="contact-info">
-            <div className="contact-icon">
-              <Address className="make-white" />
-            </div>
-            <div className="contact-type">
-              2036 Mount Ave Unit C Missoula, MT 59802
-            </div>
+            <div className="contact-type email">chaseluka@gmail.com</div>
           </div>
         </div>
         <div className="related-links">
@@ -46,9 +44,6 @@ const Contact = () => {
             className="link-container"
           >
             <LinkedIn />
-          </a>
-          <a href="https://twitter.com/Chaseluka0" className="link-container">
-            <Twitter />
           </a>
         </div>
       </div>

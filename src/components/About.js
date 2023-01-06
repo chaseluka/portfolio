@@ -2,7 +2,6 @@ import React from "react";
 import "../style/About.css";
 import { ReactComponent as Github } from "../style/images/github-original.svg";
 import { ReactComponent as LinkedIn } from "../style/images/linkedin-original.svg";
-import { ReactComponent as Twitter } from "../style/images/twitter-original.svg";
 import PortfolioSection from "./PortfolioSection";
 import Image from "./Image";
 
@@ -13,7 +12,7 @@ const About = () => {
         <PortfolioSection title="About" />
       </div>
       <div className="content">
-        <Image gif={"self-portrait-fake.jpg"} />
+        <Image gif={"self-portrait.jpeg"} />
         <div className="about-me">
           <div className="name-container">
             <div className="name">Chase Lukasiewicz</div>
@@ -39,9 +38,6 @@ const About = () => {
               className="link-container"
             >
               <LinkedIn />
-            </a>
-            <a href="https://twitter.com/Chaseluka0" className="link-container">
-              <Twitter />
             </a>
           </div>
         </div>

@@ -29,3 +29,17 @@
 .contact-info {
   gap: 5px;
 }
+
+.email {
+  text-decoration: underline;
+}
+
+.email,
+.email-container {
+  cursor: pointer;
+}
+
+.email:hover,
+.email-container:hover .email {
+  color: rgb(41, 89, 246);
+}

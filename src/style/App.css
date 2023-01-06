@@ -2,3 +2,35 @@
   height: 100%;
   overflow-x: hidden;
 }
+
+.copied-container {
+  position: sticky;
+  top: 1rem;
+  left: 40%;
+  background-color: rgb(1, 154, 1);
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.copied {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .copied-container {
+    left: 46%;
+  }
+  .copied {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .copied-container {
+    left: 47%;
+  }
+}

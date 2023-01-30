@@ -19,14 +19,16 @@ const About = () => {
           </div>
           <div className="message-container">
             <div className="message">
-              No work in life is more stimulating and fulfilling than solving
-              problems. From math, to philosophy, and everything in between, I
-              have always had a passion for solving complex problems. It's this
-              affinity that drove me to programming.
+              I am a self-taught Software Engineer with technical experience
+              primarily in Javascript, ReactJS, NodeJS, MongoDB, and Express.js
+              after having recently completed The Odin Project full-stack
+              curriculum.
             </div>
             <div className="message">
-              I love to tackle challenges on both the front-end and back-end,
-              and I'm committed to finidng the best possible of solutions.
+              I love to problem solve and I have a strong ability to learn
+              complex concepts. Check out some of my projects below if you're
+              interested. My primary interests are in web development, game
+              development, and design.
             </div>
           </div>
           <div className="related-links">

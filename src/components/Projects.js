@@ -9,6 +9,15 @@ const Projects = () => {
   const initialMount = useRef(false);
   const [projectList, setProjectList] = useState([
     {
+      projectName: "Game Index",
+      message:
+        "This is a basic inventory management app that serves to keep retail information on video games. This project highlights the use of CRUD operations, the MVC patter, and MongoDB",
+      id: uniqid(),
+      gif: "game-index.gif",
+      repository: "https://github.com/chaseluka/inventory-app",
+      live: "https://game-index.up.railway.app",
+    },
+    {
       projectName: "Twitter Clone",
       message:
         "This aimed to build the core functionality of Twitter: establishing an account, posting tweets, providing feedback on and viewing others tweets.",
@@ -16,15 +25,6 @@ const Projects = () => {
       gif: "twitterclone.gif",
       repository: "https://github.com/chaseluka/twitter-clone",
       live: "https://twitterclone-641f5.web.app/",
-    },
-    {
-      projectName: "Where's Waldo",
-      message:
-        "A photo tagging app recreating the beloved puzzle books, while utilizing firebase as the backend storage",
-      id: uniqid(),
-      gif: "whereswaldo.gif",
-      repository: "https://github.com/chaseluka/photo-tagging",
-      live: "https://photo-tagging-11145.web.app/",
     },
 
     {
@@ -53,14 +53,15 @@ const Projects = () => {
           live: "https://chaseluka.github.io/battleship/",
         },
         {
-          projectName: "Weather App",
+          projectName: "Where's Waldo",
           message:
-            "A weather forecast site using a weather API. Dynamically relates a large amount of weather information at any given location through asynchronous programming.",
+            "A photo tagging app recreating the beloved puzzle books, while utilizing firebase as the backend storage",
           id: uniqid(),
-          gif: "weather-app.gif",
-          repository: "https://github.com/chaseluka/weather-app",
-          live: "https://chaseluka.github.io/weather-app/",
+          gif: "whereswaldo.gif",
+          repository: "https://github.com/chaseluka/photo-tagging",
+          live: "https://photo-tagging-11145.web.app/",
         },
+
         {
           projectName: "Tic-Tac-Toe",
           message:

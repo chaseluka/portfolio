@@ -1,10 +1,11 @@
 .image {
   width: 50%;
-  max-width: 650px;
+  max-width: 500px;
 }
 
 #about img {
   flex-grow: 1;
+  border-radius: 9999px;
 }
 
 #about .name {
